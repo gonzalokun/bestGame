@@ -11,6 +11,8 @@ class Game
         Game();
         virtual ~Game();
 
+        void startGameLoop();
+
     private:
         bool running;
         GSManager *stateManager;
