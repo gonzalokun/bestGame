@@ -1,12 +1,14 @@
+#include <stdio.h>
+
 #include "GSManager.h"
 #include "GameState.h"
 
 GSManager::GSManager()
 {
-    //ctor
+    printf("State manager start\n");
 }
 
 GSManager::~GSManager()
 {
-    //dtor
+    printf("State manager close\n");
 }

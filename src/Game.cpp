@@ -7,9 +7,14 @@
 Game::Game()
 {
     printf("Game Start!\n");
+
+    stateManager = new GSManager();
+
 }
 
 Game::~Game()
 {
     printf("Closing game\n");
+
+    delete stateManager;
 }
