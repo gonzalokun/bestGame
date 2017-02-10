@@ -6,8 +6,12 @@
 class GameState
 {
     public:
+        /*
         virtual void init() = 0; //Load resources
         virtual void unload() = 0; //Unload everything
+        */
+
+        virtual ~GameState(); //Unload everything
 
         virtual void pause() = 0;
         virtual void resume() = 0;
