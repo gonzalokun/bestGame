@@ -3,6 +3,8 @@
 #ifndef GAMESTATE_H
 #define GAMESTATE_H
 
+class Game;
+
 class GameState
 {
     public:
@@ -19,6 +21,8 @@ class GameState
         virtual void handleEnvents() = 0;
         virtual void update() = 0;
         virtual void draw() = 0;
+
+        virtual void changeState(Game* game, GameState* state) = 0;
 
     private:
         //

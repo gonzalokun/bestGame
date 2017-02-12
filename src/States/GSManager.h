@@ -14,10 +14,11 @@ class GSManager
         void changeState(GameState *);
         void pushState(GameState *);
         void popState();
+        GameState* currentState();
 
     private:
         std::vector<GameState *> states; //State Array/Stack
-        GameState *currState;
+        //GameState *currState;
 };
 
 #endif // GSMANAGER_H
